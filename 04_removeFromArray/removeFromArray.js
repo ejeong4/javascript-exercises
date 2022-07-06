@@ -1,4 +1,11 @@
-const removeFromArray = function() {
+const removeFromArray = function(array, ...remove) {
+    let newArray = [];
+    for (i = 0; i < array.length; i++) {
+        if (array[i] != remove) {
+            newArray.push(array[i]);
+        }
+    }
+    return newArray;
 
 };
 
